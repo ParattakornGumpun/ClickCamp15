@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parattakorn</title>
+    <style>
+        /* select all element */
+        * {
+            margin: 0;
+            padding: 0;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .text-section {
+            background-color: #1b1ed3;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .three-columns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .three-columns .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background-color: #ffffff;
+            padding: 1rem;
+            flex: 1;
+            max-width: 20%;
+        }
+
+        .three-columns img {
+            color: white;
+            width: 80%;
+            height: auto;
+        }
+
+        .two-columns {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .two-columns .image {
+            background-color: #383434;
+            flex: 2;
+            height: 350px;
+        }
+
+        .two-columns .text {
+            background-color: #90c9d8;
+            flex: 1;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <main>
+            <div class="three-columns">
+                <div class="card">
+                    <p>My Picture</p>
+                    <img src="image1.jpg" alt="Image">
+                </div>
+            </div>
+            <header>><h2>My mame is Parattakorn Nakorntam  ;  My nickname is : Gumpun  ;   AGE : 16</h2></header>
+            <header> <h1> My school</h1> </header>
+            <div class="three-columns">
+                <div class="card">
+                    <p>Primary School</p>
+                    <img src="image3.jpg" alt="Image">
+                    <p>Saint Dominic School</p>
+                </div>
+                <div class="card">
+                    <p>middle school</p>
+                    <img src="image2.jpg" alt="Image">
+                    <p>Horwang School</p>
+                </div>
+                <div class="card">
+                    <p>High school</p>
+                    <img src="image4.jpg" alt="Image">
+                    <p>Satriwitthaya 2 School</p>
+                </div>
+            </div>
+            <!-- <div class="two-columns">
+                <div class="image">
+                    <p style="text-align: center; padding-top: 50px;"></p>
+                    
+                    <p>middle school</p>
+                    <img src="image2.jpg" alt="">
+                </div>
+            </div> -->
+        </main>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+</html>
